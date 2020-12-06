@@ -1,15 +1,15 @@
 {
-  "name": "sidebar",
+  "name": "@xeiteam/sidebar",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run serve:single-spa",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa:sidebar": "ng build sidebar --prod --deploy-url http://localhost:4200/",
-    "serve:single-spa:sidebar": "ng s --project sidebar --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
+    "build:single-spa": "ng build sidebar --prod --deploy-url http://localhost:4202/",
+    "serve:single-spa": "ng serve --disable-host-check --port 4202 --deploy-url http://localhost:4202/ --live-reload false"
   },
   "private": true,
   "dependencies": {
